@@ -1,0 +1,255 @@
+.workout-grid {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: flex;
+  gap: 3px;
+  margin-left: 30px;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.grid-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.grid-cell:hover {
+  transform: scale(1.2);
+}
+
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.workout-summary {
+  font-size: 24px;
+  color: #24292f;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.workout-count {
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.year-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 36px; /* Align with grid content */
+}
+
+.year-button {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #57606a;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.year-button:hover {
+  background-color: #f6f8fa;
+}
+
+.year-button.selected {
+  font-weight: bold;
+  color: #24292f;
+}
+
+.day-labels {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 3px;
+  margin-right: 2px;
+  font-size: 11px;
+  color: #57606a;
+  align-items: center;
+}
+
+.day-labels span {
+  height: 12px;
+  line-height: 12px;
+}
+
+.month-labels {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-left: 30px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.grid-wrapper {
+  display: flex;
+}
+
+.intensity-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.legend-item {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+
+.placeholder-box {
+  margin-top: 40px;
+  padding: 24px;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  min-height: 200px;
+}
+
+.strava-auth-button {
+  background-color: #fc4c02;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.strava-auth-button:hover {
+  background-color: #e34402;
+}
+
+.strava-auth-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.workout-tooltip {
+  position: fixed;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15);
+  border: 1px solid #d0d7de;
+  width: 300px;
+  z-index: 1000;
+  font-size: 12px;
+  transform: translate(10px, 10px);
+}
+
+.tooltip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #d0d7de;
+  background: #f6f8fa;
+  border-radius: 6px 6px 0 0;
+}
+
+.tooltip-date {
+  font-weight: 600;
+  color: #24292f;
+}
+
+.tooltip-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #57606a;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.tooltip-close:hover {
+  background-color: #f3f4f6;
+  color: #24292f;
+}
+
+.tooltip-content {
+  padding: 12px;
+}
+
+.tooltip-content h4 {
+  margin: 0 0 8px 0;
+  color: #24292f;
+  font-size: 14px;
+}
+
+.tooltip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  color: #57606a;
+}
+
+.detail-value {
+  color: #24292f;
+  font-weight: 600;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px 0;
+}
+
+.app-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.app-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #24292f;
+  margin: 0;
+}
+
+.workout-content {
+  padding: 0 20px;
+} 
